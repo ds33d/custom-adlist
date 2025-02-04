@@ -1,0 +1,10 @@
+#This section blocks Twitter
+0.0.0.0 api.twitter.com
+0.0.0.0 developers.twitter.com
+0.0.0.0 fonts.twitter.com
+0.0.0.0 help.twitter.com
+0.0.0.0 mobile.twitter.com
+0.0.0.0 twitter.com
+0.0.0.0 video.twimg.com
+0.0.0.0 www.twitter.com
+0.0.0.0 x.com
