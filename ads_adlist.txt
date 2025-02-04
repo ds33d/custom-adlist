@@ -3,4 +3,7 @@
 0.0.0.0 fundingchoicesmessages.google.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 tpc.googlesyndication.com
-0.0.0.0
+0.0.0.0 ep1.adtrafficquality.google
+0.0.0.0 cdn.iubenda.com
+0.0.0.0 ybs2ffs7v.com
+0.0.0.0 12ezo5v60.com
