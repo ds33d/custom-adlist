@@ -8,5 +8,4 @@
 0.0.0.0 gateway.facebook.com
 0.0.0.0 z-p3-graph.facebook.com
 0.0.0.0 z-p42-chat-e2ee-ig.facebook.com
-0.0.0.0 star.c10r.facebook.com
 0.0.0.0 star-mini.c10r.facebook.com
