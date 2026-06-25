@@ -23,6 +23,9 @@ $addBlocklistIP "cdn.iubenda.com" "ad-blocklist-ip" "24h"
 $addBlocklistIP "ybs2ffs7v.com" "ad-blocklist-ip" "24h"
 $addBlocklistIP "12ezo5v60.com" "ad-blocklist-ip" "24h"
 $addBlocklistIP "analytics.004gmbh.de" "ad-blocklist-ip" "24h"
+$addBlocklistIP "cdn.bannersnack.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "possibilityvision.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "ybs2ffs7v.com" "ad-blocklist-ip" "24h"
 
 :set addBlocklistIP;
 :set addBlocklistIPv6;
