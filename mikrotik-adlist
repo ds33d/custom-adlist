@@ -1,27 +1,26 @@
 /ip/firewall/address-list/remove [ find where list="adlist-block" ];
 :global addBlocklistIP;
 :set addBlocklistIP do={
-    :do { /ip/firewall/address-list/add list=adlist-block address=$1 comment="$2" timeout=$3; } on-error={ }
+    :do { /ip/firewall/address-list/add list=adlist-block address=$1 comment="$2"} on-error={ }
 
 }
 #Template
-#$addBlocklistIP "" "adlist-block" "24h"
+#$addBlocklistIP "" "adlist-block" 
 
-$addBlocklistIP "googleads.g.doubleclick.net" "adlist-block" "24h"
-$addBlocklistIP "fundingchoicesmessages.google.com" "adlist-block" "24h"
-$addBlocklistIP "pagead2.googlesyndication.com" "adlist-block" "24h"
-$addBlocklistIP "tpc.googlesyndication.com" "adlist-block" "24h"
-$addBlocklistIP "ep1.adtrafficquality.google" "adlist-block" "24h"
-$addBlocklistIP "cdn.iubenda.com" "adlist-block" "24h"
-$addBlocklistIP "ybs2ffs7v.com" "adlist-block" "24h"
-$addBlocklistIP "12ezo5v60.com" "adlist-block" "24h"
-$addBlocklistIP "analytics.004gmbh.de" "adlist-block" "24h"
-$addBlocklistIP "cdn.bannersnack.com" "adlist-block" "24h"
-$addBlocklistIP "possibilityvision.com" "adlist-block" "24h"
-$addBlocklistIP "ybs2ffs7v.com" "adlist-block" "24h"
-$addBlocklistIP "analytics.004gmbh.de" "adlist-block" "24h"
-$addBlocklistIP "cdn.007moms.com" "adlist-block" "24h"
-$addBlocklistIP "my.007moms.com" "adlist-block" "24h"
+$addBlocklistIP "googleads.g.doubleclick.net" "adlist-block" 
+$addBlocklistIP "fundingchoicesmessages.google.com" "adlist-block" 
+$addBlocklistIP "pagead2.googlesyndication.com" "adlist-block" 
+$addBlocklistIP "tpc.googlesyndication.com" "adlist-block" 
+$addBlocklistIP "ep1.adtrafficquality.google" "adlist-block" 
+$addBlocklistIP "cdn.iubenda.com" "adlist-block" 
+$addBlocklistIP "ybs2ffs7v.com" "adlist-block" 
+$addBlocklistIP "12ezo5v60.com" "adlist-block" 
+$addBlocklistIP "analytics.004gmbh.de" "adlist-block" 
+$addBlocklistIP "cdn.bannersnack.com" "adlist-block" 
+$addBlocklistIP "possibilityvision.com" "adlist-block" 
+$addBlocklistIP "ybs2ffs7v.com" "adlist-block" 
+$addBlocklistIP "analytics.004gmbh.de" "adlist-block" 
+$addBlocklistIP "cdn.007moms.com" "adlist-block" 
+$addBlocklistIP "my.007moms.com" "adlist-block" 
 
 :set addBlocklistIP;
-
