@@ -4,13 +4,6 @@
     :do { /ip/firewall/address-list/add list=adlist-block address=$1 comment="$2" timeout=$3; } on-error={ }
 
 }
-
-/ipv6/firewall/address-list/remove [ find where list="adlist-block" ];
-:global addBlocklistIPv6;
-:set addBlocklistIPv6 do={
-    :do { /ipv6/firewall/address-list/add list=adlist-block address=$1 comment="$2" timeout=$3; } on-error={ }
-
-}
 #Template
 #$addBlocklistIP "" "adlist-block" "24h"
 
@@ -31,4 +24,4 @@ $addBlocklistIP "cdn.007moms.com" "adlist-block" "24h"
 $addBlocklistIP "my.007moms.com" "adlist-block" "24h"
 
 :set addBlocklistIP;
-:set addBlocklistIPv6;
+
