@@ -3,11 +3,11 @@
 :set addBlocklistIP do={
     :do { /ip/firewall/address-list/add list=CrowdSec address=$1 comment="$2" timeout=$3; } on-error={ }
 }
-$addBlocklistIP "googleads.g.doubleclick.net" "ad-blocklist-ip"
-$addBlocklistIP "fundingchoicesmessages.google.com" "ad-blocklist-ip"
-$addBlocklistIP "pagead2.googlesyndication.com" "ad-blocklist-ip"
-$addBlocklistIP "tpc.googlesyndication.com" "ad-blocklist-ip"
-$addBlocklistIP "ep1.adtrafficquality.google" "ad-blocklist-ip"
-$addBlocklistIP "cdn.iubenda.com" "ad-blocklist-ip"
-$addBlocklistIP "ybs2ffs7v.com" "ad-blocklist-ip"
-$addBlocklistIP "12ezo5v60.com" "ad-blocklist-ip"
+$addBlocklistIP "googleads.g.doubleclick.net" "ad-blocklist-ip" "24h"
+$addBlocklistIP "fundingchoicesmessages.google.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "pagead2.googlesyndication.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "tpc.googlesyndication.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "ep1.adtrafficquality.google" "ad-blocklist-ip" "24h"
+$addBlocklistIP "cdn.iubenda.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "ybs2ffs7v.com" "ad-blocklist-ip" "24h"
+$addBlocklistIP "12ezo5v60.com" "ad-blocklist-ip" "24h"
