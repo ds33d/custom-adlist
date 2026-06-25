@@ -1,13 +1,13 @@
 /ip/firewall/address-list/remove [ find where list="ads-blocklist-ip" ];
 :global addBlocklistIP;
 :set addBlocklistIP do={
-    :do { /ip/firewall/address-list/add list=CrowdSec address=$1 comment="$2" timeout=$3; } on-error={ }
+    :do { /ip/firewall/address-list/add list=adlist-block address=$1 comment="$2" timeout=$3; } on-error={ }
 }
 
 /ipv6/firewall/address-list/remove [ find where list="ads-blocklist-ip" ];
 :global addBlocklistIPv6;
 :set addBlocklistIPv6 do={
-    :do { /ipv6/firewall/address-list/add list=CrowdSec address=$1 comment="$2" timeout=$3; } on-error={ }
+    :do { /ipv6/firewall/address-list/add list=adlist-block address=$1 comment="$2" timeout=$3; } on-error={ }
 }
 $addBlocklistIP "googleads.g.doubleclick.net" "ad-blocklist-ip" "24h"
 $addBlocklistIP "fundingchoicesmessages.google.com" "ad-blocklist-ip" "24h"
