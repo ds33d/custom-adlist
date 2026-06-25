@@ -1,8 +1,13 @@
-googleads.g.doubleclick.net
-fundingchoicesmessages.google.com
-pagead2.googlesyndication.com
-tpc.googlesyndication.com
-ep1.adtrafficquality.google
-cdn.iubenda.com
-ybs2ffs7v.com
-12ezo5v60.com
+/ip/firewall/address-list/remove [ find where list="ad-blocklist" ];
+:global ad-blocklist;
+:set addBlocklistIP do={
+    :do { /ip/firewall/address-list/add list=CrowdSec address=$1 comment="$2" timeout=$3; } on-error={ }
+}
+$addBlocklistIP googleads.g.doubleclick.net "ad-blocklist-ip"
+$addBlocklistIP fundingchoicesmessages.google.com "ad-blocklist-ip"
+$addBlocklistIP pagead2.googlesyndication.com "ad-blocklist-ip"
+$addBlocklistIP tpc.googlesyndication.com "ad-blocklist-ip"
+$addBlocklistIP ep1.adtrafficquality.google "ad-blocklist-ip"
+$addBlocklistIP cdn.iubenda.com "ad-blocklist-ip"
+$addBlocklistIP ybs2ffs7v.com "ad-blocklist-ip"
+$addBlocklistIP 12ezo5v60.com "ad-blocklist-ip"
