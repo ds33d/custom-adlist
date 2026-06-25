@@ -9,6 +9,11 @@
 :set addBlocklistIPv6 do={
     :do { /ipv6/firewall/address-list/add list=adlist-block address=$1 comment="$2" timeout=$3; } on-error={ }
 }
+
+#Template
+#
+#$addBlocklistIP "" "ad-blocklist-ip" "24h"
+
 $addBlocklistIP "googleads.g.doubleclick.net" "ad-blocklist-ip" "24h"
 $addBlocklistIP "fundingchoicesmessages.google.com" "ad-blocklist-ip" "24h"
 $addBlocklistIP "pagead2.googlesyndication.com" "ad-blocklist-ip" "24h"
@@ -17,7 +22,7 @@ $addBlocklistIP "ep1.adtrafficquality.google" "ad-blocklist-ip" "24h"
 $addBlocklistIP "cdn.iubenda.com" "ad-blocklist-ip" "24h"
 $addBlocklistIP "ybs2ffs7v.com" "ad-blocklist-ip" "24h"
 $addBlocklistIP "12ezo5v60.com" "ad-blocklist-ip" "24h"
-
+$addBlocklistIP "analytics.004gmbh.de" "ad-blocklist-ip" "24h"
 
 :set addBlocklistIP;
 :set addBlocklistIPv6;
