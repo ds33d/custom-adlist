@@ -1,4 +1,3 @@
-
 /ip/firewall/address-list/remove [ find where list="adlist-block" ];
 :global addBlocklistIP;
 :set addBlocklistIP do={
@@ -30,12 +29,6 @@ $addBlocklistIP "ybs2ffs7v.com" "adlist-block" "24h"
 $addBlocklistIP "analytics.004gmbh.de" "adlist-block" "24h"
 $addBlocklistIP "cdn.007moms.com" "adlist-block" "24h"
 $addBlocklistIP "my.007moms.com" "adlist-block" "24h"
-$addBlocklistIP "bd100.010lm.com" "adlist-block" "24h"
-$addBlocklistIP "umami.011bq.app" "adlist-block" "24h"
-$addBlocklistIP "98.01ba.com" "adlist-block" "24h"
-$addBlocklistIP "ads.01film.cc" "adlist-block" "24h"
-$addBlocklistIP "securite.01net.com" "adlist-block" "24h"
-$addBlocklistIP "umami.01o.de" "adlist-block" "24h"
-$addBlocklistIP "ads.021.rs" "adlist-block" "24h"
-$addBlocklistIP "img.0279.net" "adlist-block" "24h"
-$addBlocklistIP "o.027eat.com" "adlist-block" "24h"
+
+:set addBlocklistIP;
+:set addBlocklistIPv6;
